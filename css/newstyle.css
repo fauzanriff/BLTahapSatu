@@ -1,0 +1,123 @@
+/* newstyle.css
+ * by Fauzan Muhammad Rifqy
+ *
+ * This file is stylesheet for redesigning the sign up window
+ *
+ * Optimal for minimum screen size :
+ *		- Window size : 1000 x 725
+ *		- Viewport size : 1000 x 653
+ */
+
+
+/********************
+	Main Style
+********************/
+
+.fz-content{
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+#fz-id-daftar{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.fz-popUpDaftar {
+	display: none;
+	position: absolute;
+	left: auto;
+	right: -1em;
+	top: 5em;
+}
+
+.fz-container{
+	padding: 0.4em;
+	border-radius: 5px;
+	background-color: #E0E0E0;
+}
+
+.fz-container form{
+	border-radius: 5px;
+	background-color: #FFF;
+}
+
+.fz-container form .optional{
+	padding-bottom: 2em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+.fz-page-divider{
+	margin: 0 0.5em;
+	text-align: center;
+}
+
+.fz-container-arrow{
+
+}
+
+.fz-arrow-up{
+	margin-left: 17em;
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #E0E0E0;
+	z-index: 100;
+}
+
+/********************
+	Social Connect Box
+ ********************/
+
+.fz-social-connect{
+	display: block;
+	background-color: #fff;
+	padding: 1em;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-width: 1px;
+	border-bottom-color: #E0E0E0;
+	border-bottom-style: solid;
+}
+
+.fz-btn{
+	margin-bottom: 0.5em;
+}
+
+/********************
+	Pop Up Content
+ ********************/
+
+.fz-content{
+	border-radius: 0;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+
+.fz-width-sm{
+	max-width: 240px;
+}
+
+.fz-form-submit{
+	text-align: right;
+}
+
+.fz-form-submit{
+	margin-top: 1em;
+	margin-right: 2em;
+}
+
+/********************
+	Fixing
+ ********************/
+
+.layout{
+	padding-top: 100px;
+	background-color: #CB0051;
+}
+
+

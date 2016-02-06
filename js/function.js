@@ -5,9 +5,17 @@
  * 
  */
 
-function called(){
-	window.alert("WELCOME BL USER");
+function popUp(){
+	var popUpWindow = document.getElementById("fz-id-popUpDaftar");
+	//popUpWindow.style.display = popUpWindow.style.display === 'none' ? 'block' : 'none';
+	//window.alert("clicked");
+
+	if(popUpWindow.style.display === "none" || popUpWindow.style.display == ""){
+		popUpWindow.style.display = "block";
+	}else{
+		popUpWindow.style.display = "none";
+	}
 	return false;
 }
 
-document.getElementById("daftar").addEventListener("click", called);
+//document.getElementById("fz-id-daftar").addEventListener("click", popUp);

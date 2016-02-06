@@ -21,9 +21,10 @@
 
 
 
-<link href="https://s3.bukalapak.com/assets/application-1e884c8f432195e17013dedf57ecbbfc347543333bc901883e90285c94eff3f3.css" media="screen" rel="stylesheet" />
-<!-- #myConfig Use the link below if you cann't access link on top -->
+<link href="https://s2.bukalapak.com/assets/application-4c4dc1262607d1379d3d50a6e121e065cc9eb5746c613537eb0ec12f0a9c69ad.css" media="screen" rel="stylesheet" />
+<!-- #myConfig : Use the link below if you cann't access link on top -->
 <!--<link href="css/style.css" media="screen" rel="stylesheet" />-->
+<link href="css/newstyle.css" media="screen" rel="stylesheet" />
 
 
 
@@ -41,17 +42,6 @@
 <h1 class='logo'>
 <a href='https://www.bukalapak.com/'>Bukalapak.com</a>
 </h1>
-</div>
-<div class='layout-header__search' id='omnisearch'>
-<form accept-charset="UTF-8" action="/products" class="simple_form omnisearch-form" id="new_search" method="get" novalidate="novalidate"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div><div class='omnisearch-field' data-no-turbolink>
-<input autocomplete="off" class="string required omnisearch__keyword" data-current-keyword="" data-no-turbolink="true" data-placeholder="Cari barang&hellip;" id="search_keywords" name="search[keywords]" placeholder="Cari barang&hellip;" type="text" />
-</div>
-<div class='omnisearch-action'>
-<input class="omnisearch__submit" tabindex="-1" type="submit" value="Cari" />
-</div>
-</form>
-
-
 </div>
 <div class='layout-header__nav'>
 <div class='nav-header'>
@@ -94,40 +84,67 @@ Lupa Password? <a href="/password_resets/new">Reset password</a>
 </div>
 
 	
-	<a id="daftar" class="btn btn--large btn--green" href="#">Daftar</a>
+	<a id="fz-id-daftar" class="btn btn--large btn--green" href='' onclick="return popUp();">Daftar</a>
 
-
+<!-- #myConfig : The HTML below is what shown in pop up window when 'Daftar' is clicked -->
+<div id="fz-id-popUpDaftar" class='fz-popUpDaftar'>
+	<div class"fz-container-arrow">
+		<div class="fz-arrow-up"></div>
+	</div>
+	<div class="fz-container">
+		<div class='fz-social-connect'>
+			<a class="btn btn--fb btn--large btn--block fz-btn" href="https://www.bukalapak.com/fb_login">
+				<span class="ion-icon ion-social-facebook"></span>
+				Daftar dengan Facebook
+			</a>
+			<a class="btn btn--ggl btn--large btn--block" href="https://www.bukalapak.com/gplus_login">
+				<span class="ion-icon ion-social-google"></span>
+				Daftar dengan Google
+			</a>
+		</div>
+		<div class="page-content fz-content">
+			<fieldset class="form-field-item">
+				<dl class="email required user_email"><input class="string email required" id="user_email" name="user[email]" type="email" placeholder="E-mail"><span class="label">Pastikan e-mail yang Anda tuliskan valid. <a href="#" class="label-tips tooltipstered">?</a></span><div class="msg"></div></dl>
+				<input id="referrer_token" name="referrer_token" type="hidden">
+			</fieldset>
+			<fieldset class="form-field-item">
+				<dl class="string required user_name"><input class="string required" id="user_name" name="user[name]" type="text" placeholder="Nama Lengkap"><div class="msg"></div></dl>
+			</fieldset>
+			<fieldset class="form-field-item">
+				<dl class="password required user_password"><input class="password required" id="user_password" name="user[password]" type="password" placeholder="Password"><div class="msg"></div></dl>
+			</fieldset>
+			<fieldset class="form-field-item">
+				<dl class="password required user_password_confirmation"><input class="password required" id="user_password_confirmation" name="user[password_confirmation]" type="password" placeholder="Ulangi Password"><div class="msg"></div></dl>
+			</fieldset>
+			<fieldset class="form-field-item">
+				<dl class="radio_buttons required user_gender"><label class="radio"><label for="user_gender_laki-laki"><input class="radio_buttons required" id="user_gender_laki-laki" name="user[gender]" type="radio" value="Laki-laki">Laki-laki</label></label><label class="radio"><label for="user_gender_perempuan"><input class="radio_buttons required" id="user_gender_perempuan" name="user[gender]" type="radio" value="Perempuan">Perempuan</label></label><div class="msg"></div></dl>
+			</fieldset>
+			<fieldset class="form-field-item">
+				<dl class="middle new-username">
+					<input autocomplete="off" id="user_username" name="user[username]" type="text" placeholder="bukalapak.com/username">
+					<span class="label">Username tidak dapat diubah.</span>
+				</dl>
+				<div class="msg">
+					<span></span>
+				</div>
+			</fieldset>
+			<fieldset class="form-field-item fz-width-sm">
+				<label>
+					<input name="user[policy]" type="hidden" value="1">
+					<span class="label">Tekan "daftar" jika Anda telah menyetujui
+					<strong><a class="cbox-term-condition cboxElement" href="/terms">aturan penggunaan</a></strong>
+					Bukalapak.com</span>
+				</label>
+			</fieldset>
+			<div class="fz-form-submit">
+				<input class="btn btn--green btn--large" id="new-registration" name="commit" type="submit" value="Daftar">
+			</div>
+		</div>
+	</div>
 </div>
 
-</div>
-<ul class='nav-header__list'>
+<!-- #myConfig : End of Pop Up Window -->
 
-<li class='nav-header__item'>
-<a class="nav-header__link js-nav-header-tooltip nav-header__link--sell" href="/products/new?from=dropdown" title="Jual Barang">Jual Barang</a>
-<span class='nav-header__count nav-header__count--plus'>+</span>
-</li>
-<li class='nav-header__item js-nav-cart'>
-<a class="nav-header__link nav-header__link--cart js-nav-header-tooltip js-dropdown-toggle" href="/cart/carts" title="Keranjang Belanja">Keranjang Belanja</a>
-<div class='dropdown-menu dropdown-menu--cart js-dropdown-menu'>
-<div class='dropdown-menu__body'>
-<div class='menu-history'>
-<ul class='dropdown__list'>
-<li class='dropdown__item'>
-<div class='dropdown__item__empty'>
-Belum ada barang ditambahkan
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class='dropdown-menu__footer'>
-<a href="/cart/carts">Lihat keranjang</a>
-</div>
-</div>
-
-</li>
-
-</ul>
 </div>
 </div>
 </div>
@@ -207,7 +224,7 @@ Call Center 24 jam siap membantu Anda
 
 <script src="https://s1.bukalapak.com/assets/application-9f16ab5421f194de284850d24a5e3e13a32a67902eb4294dc441f46ea9133c01.js"></script>
 
-<!-- #myConfig Configuration Script -->
+<!-- #myConfig : Configuration Script -->
 <script src="js/function.js"></script>
 
 </body>
