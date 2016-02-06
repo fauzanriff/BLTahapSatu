@@ -13,21 +13,32 @@
 	Main Style
 ********************/
 
+.blur{
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.layout{
+
+}
+
 .fz-content{
 	background-color: #fff;
 	border-radius: 5px;
 }
 
 #fz-id-daftar{
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+
 }
 
 .fz-popUpDaftar {
 	display: none;
 	position: absolute;
 	left: auto;
-	right: -1em;
+	right: 8em;
 	top: 5em;
 }
 
@@ -65,7 +76,7 @@
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-bottom: 10px solid #E0E0E0;
-	z-index: 100;
+	z-index: 2;
 }
 
 /********************
@@ -119,5 +130,75 @@
 	padding-top: 100px;
 	background-color: #CB0051;
 }
+
+
+/********************
+	Pop Up Window 2
+ ********************/
+
+.fz-popUpDaftar2 {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.fz-content{
+	background-color: #fff;
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.fz-container2{
+	display: table-cell;
+	vertical-align: middle;
+	/*border-style: solid;
+	border-color: #DDD;
+	border-width: 1px;
+	border-radius: 5px;*/
+	padding: 0.4em;
+}
+
+.fz-inner{
+	border-style: solid;
+	border-color: #CCC;
+	border-width: 1px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(232,232,232,0.75);
+	border-radius: 10px;
+}
+
+.fz-container2 form{
+	border-radius: 5px;
+	background-color: transparent;
+}
+
+.fz-container2 form .optional{
+	padding-bottom: 2em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+}
+
+.fz-social-connect2{
+	display: block;
+	background-color: transparent;
+	padding: 1em;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-width: 1px;
+	border-bottom-color: #E0E0E0;
+	border-bottom-style: solid;
+}
+
+
+
+
 
 

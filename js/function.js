@@ -7,8 +7,6 @@
 
 function popUp(){
 	var popUpWindow = document.getElementById("fz-id-popUpDaftar");
-	//popUpWindow.style.display = popUpWindow.style.display === 'none' ? 'block' : 'none';
-	//window.alert("clicked");
 
 	if(popUpWindow.style.display === "none" || popUpWindow.style.display == ""){
 		popUpWindow.style.display = "block";
@@ -18,4 +16,16 @@ function popUp(){
 	return false;
 }
 
-//document.getElementById("fz-id-daftar").addEventListener("click", popUp);
+function popUp2(){
+	var popUpWindow = document.getElementById("fz-id-popUpDaftar2");
+	var targetBlur = document.getElementById("layout-id");
+
+	if(popUpWindow.style.display === "none" || popUpWindow.style.display == ""){
+		popUpWindow.style.display = "table";
+		targetBlur.className = "layout blur";
+	}else{
+		popUpWindow.style.display = "none";
+		targetBlur.className = "layout";
+	}
+	return false;
+}

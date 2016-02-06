@@ -20,7 +20,6 @@
 <meta content="xi3OyBbOhGXYvYiR/SJLd5yk6/oD0vvV7WAtCqELrbo=" name="csrf-token" />
 
 
-
 <link href="https://s2.bukalapak.com/assets/application-4c4dc1262607d1379d3d50a6e121e065cc9eb5746c613537eb0ec12f0a9c69ad.css" media="screen" rel="stylesheet" />
 <!-- #myConfig : Use the link below if you cann't access link on top -->
 <!--<link href="css/style.css" media="screen" rel="stylesheet" />-->
@@ -33,7 +32,81 @@
 
 <body data-current-user=''>
 
-<div class='layout'>
+<div id="fz-id-popUpDaftar2" class='fz-popUpDaftar2'>
+	<div class="fz-container2">
+		<div class="fz-inner">
+			<div class='fz-social-connect2'>
+				<a class="btn btn--fb btn--large btn--block fz-btn" href="https://www.bukalapak.com/fb_login">
+					<span class="ion-icon ion-social-facebook"></span>
+					Daftar dengan Facebook
+				</a>
+				<a class="btn btn--ggl btn--large btn--block" href="https://www.bukalapak.com/gplus_login">
+					<span class="ion-icon ion-social-google"></span>
+					Daftar dengan Google
+				</a>
+			</div>
+			<div class="page-content fz-content2">
+				<fieldset class="form-field-item">
+				<br>
+				<dl class="email required user_email"><dt><label class="email required control-label" for="user_email"><abbr title="required">*</abbr> E-mail</label></dt><dd><input class="string email required" id="user_email" name="user[email]" type="email"><span class="label">Pastikan e-mail yang Anda tuliskan valid. <a href="#" class="label-tips tooltipstered">?</a></span></dd><div class="msg"></div></dl>
+				<input id="referrer_token" name="referrer_token" type="hidden">
+				</fieldset>
+				<fieldset class="form-field-item">
+				<dl class="string required user_name"><dt><label class="string required control-label" for="user_name"><abbr title="required">*</abbr> Nama Lengkap</label></dt><dd><input class="string required" id="user_name" name="user[name]" type="text"></dd><div class="msg"></div></dl>
+				</fieldset>
+				<fieldset class="form-field-item">
+				<dl class="password required user_password"><dt><label class="password required control-label" for="user_password"><abbr title="required">*</abbr> Password</label></dt><dd><input class="password required" id="user_password" name="user[password]" type="password"></dd><div class="msg"></div></dl>
+				</fieldset>
+				<fieldset class="form-field-item">
+				<dl class="password required user_password_confirmation"><dt><label class="password required control-label" for="user_password_confirmation"><abbr title="required">*</abbr> Ulangi Password</label></dt><dd><input class="password required" id="user_password_confirmation" name="user[password_confirmation]" type="password"></dd><div class="msg"></div></dl>
+				</fieldset>
+				<fieldset class="form-field-item">
+				<dl class="radio_buttons required user_gender"><dt><label class="radio_buttons required control-label"><abbr title="required">*</abbr> Jenis Kelamin</label></dt><dd><label class="radio"><label for="user_gender_laki-laki"><input class="radio_buttons required" id="user_gender_laki-laki" name="user[gender]" type="radio" value="Laki-laki">Laki-laki</label></label><label class="radio"><label for="user_gender_perempuan"><input class="radio_buttons required" id="user_gender_perempuan" name="user[gender]" type="radio" value="Perempuan">Perempuan</label></label></dd><div class="msg"></div></dl>
+				</fieldset>
+				<fieldset class="form-field-item">
+				<dl class="middle new-username">
+				<dt>
+				<label class="required control-label" for="user_username">
+				<abbr title="required">*</abbr>
+				Username
+				<br>
+				<span>(tidak dapat diubah)</span>
+				</label>
+				</dt>
+				<dd class="pick-user">
+				<span>bukalapak.com/</span>
+				<input autocomplete="off" id="user_username" name="user[username]" type="text">
+				</dd>
+				</dl>
+				<div class="msg">
+				<span></span>
+				</div>
+				</fieldset>
+				<div class="page-content">
+					<fieldset class="form-field-item">
+						<dl class="error policy">
+						<dt></dt>
+							<dd>
+							<label>
+							<input name="user[policy]" type="hidden" value="1">
+							Tekan "daftar" jika Anda telah menyetujui
+							<strong><a class="cbox-term-condition cboxElement" href="/terms">aturan penggunaan</a></strong>
+							Bukalapak.com
+							</label>
+							</dd>
+						</dl>
+					</fieldset>
+				</div>
+				<div class="fz-form-submit">
+					<input class="btn btn--gray btn--large" type="submit" value="Close" onclick="return popUp2();">
+					<input class="btn btn--green btn--large" id="new-registration" name="commit" type="submit" value="Daftar">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="layout-id" class='layout'>
 
 <header class='layout-header js-layout-header' role='banner'>
 <div class='layout-header__content js-layout-header__content'>
@@ -84,7 +157,7 @@ Lupa Password? <a href="/password_resets/new">Reset password</a>
 </div>
 
 	
-	<a id="fz-id-daftar" class="btn btn--large btn--green" href='' onclick="return popUp();">Daftar</a>
+	<a id="fz-id-daftar" class="btn btn--large btn--green" href='' onclick="return popUp();">Daftar-1</a>
 
 <!-- #myConfig : The HTML below is what shown in pop up window when 'Daftar' is clicked -->
 <div id="fz-id-popUpDaftar" class='fz-popUpDaftar'>
@@ -132,7 +205,7 @@ Lupa Password? <a href="/password_resets/new">Reset password</a>
 				<label>
 					<input name="user[policy]" type="hidden" value="1">
 					<span class="label">Tekan "daftar" jika Anda telah menyetujui
-					<strong><a class="cbox-term-condition cboxElement" href="/terms">aturan penggunaan</a></strong>
+					<strong><a class="cbox-term-condition cboxElement" href="http://www.bukalapak.com/terms">aturan penggunaan</a></strong>
 					Bukalapak.com</span>
 				</label>
 			</fieldset>
@@ -142,6 +215,8 @@ Lupa Password? <a href="/password_resets/new">Reset password</a>
 		</div>
 	</div>
 </div>
+
+	<a id="fz-id-daftar2" class="btn btn--large btn--green" href='' onclick="return popUp2();">Daftar-2</a>
 
 <!-- #myConfig : End of Pop Up Window -->
 
