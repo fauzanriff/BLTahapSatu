@@ -13,9 +13,9 @@ Home
 ![alt tag](https://raw.githubusercontent.com/fauzanriff/BLTahapSatu/master/demo/home.png)  
 
   
-Dropdown  
+Dropdown (Daftar-1)  
 ![alt tag](https://raw.githubusercontent.com/fauzanriff/BLTahapSatu/master/demo/dropdown.png)  
 
   
-Pop Up  
+Pop Up (Daftar-2)  
 ![alt tag](https://raw.githubusercontent.com/fauzanriff/BLTahapSatu/master/demo/popup.png)  
